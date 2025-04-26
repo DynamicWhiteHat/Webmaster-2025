@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="../static/css/quiz.css" type="text/css">
+{% endblock %}
+
+{% block content %}
+<br>
+<div id="quiz">
+    <h1>
+        {% block quiz_title %}{% endblock %}
+    </h1>
+    <div id="question"></div>
+    <div id="options"></div>
+</div>
+
+<script src= "{% block script %}{% endblock %}"></script>
+
+<div id="back_button">
+    <a style="margin:10px" href="{% block back_link %}{% endblock %}" class="btn btn-primary" role="button">Back</a>
+</div>
+
+{% endblock %}
