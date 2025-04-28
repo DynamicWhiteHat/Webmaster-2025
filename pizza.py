@@ -15,21 +15,17 @@ def home():
 def citations():
     return render_template('citations.html')
 
-@app.route('/solar.html')
-def solar():
-    return render_template('solar.html')
+@app.route('/sourcing.html')
+def sourcing():
+    return render_template('sourcing.html')
 
-@app.route('/wind.html')
-def wind():
-    return render_template('wind.html')
+@app.route('/safety.html')
+def safety():
+    return render_template('safety.html')
 
-@app.route('/hydroelectric.html')
-def hydro():
-    return render_template('hydroelectric.html')
-
-@app.route('/geothermal.html')
-def geothermal():
-    return render_template('geothermal.html')
+@app.route('/order.html')
+def order():
+    return render_template('order.html')
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", debug=True)

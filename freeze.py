@@ -1,4 +1,4 @@
-from green_energy import app
+from pizza import app
 from flask_frozen import Freezer
 
 freezer = Freezer(app)
