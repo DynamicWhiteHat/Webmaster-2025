@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<style>
+    .bag-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 8px;
+    }
+
+    .remove-button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background: none;
+        border: none;
+        font-size: 20px;
+        color: red;
+        cursor: pointer;
+    }
+
+    .capitalize {
+        text-transform: capitalize;
+    }
+
+</style>
+{% endblock %}
+
+{% block title %}
+    Bag
+{% endblock %}
+
+{% block content %}
+<h1 style="text-align: center;">Your Bag</h1>
+
+    <div id="bag-container">
+        <!-- Items will be inserted here by JS -->
+    </div>
+
+    <div style="text-align:center; margin: 20px;">
+        <button class="btn btn-danger" id="clear-bag" style="margin: 10px;">Clear Bag</button>
+        <button class="btn btn-primary" id="checkout" style="margin: 10px;">Checkout</button>
+        <a href="order.html" class="btn btn-secondary" style="margin: 10px;">Order More</a>
+    </div>
+
+    <script src="../static/js/bag.js"></script>
+
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'order-base.html' %}
+
+{% block title %}
+Breadsticks
+{% endblock %}
+
+{% block image %}
+../static/img/breadsticks.jpg
+{% endblock %}
+
+{% block alt %}
+Breadsticks
+{% endblock %}
+
+{% block options %}
+<form action="order-bag.html" method="post" style="margin: 20px;">
+    <div class="form-group">
+        <label for="dipping-sauce">Dipping Sauce</label>
+        <select class="form-control" id="dipping-sauce" name="dipping-sauce">
+            <option value="marinara">Marinara</option>
+            <option value="ranch">Ranch</option>
+            <option value="cheese">Cheese</option>
+            <option value="garlic">Garlic</option>
+            <option value="buffalo">Buffalo</option>
+            <option value="bbq">BBQ</option>
+            <option value="honey-mustard">Honey Mustard</option>
+            <option value="no-sauce">No sauce</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input type="number" class="form-control" id="quantity" name="quantity" min="1" max="10" value="1">
+    </div>
+{% endblock %}
+
+{% block script %}
+../static/js/order-breadsticks.js
+{% endblock %}

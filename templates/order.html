@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block head %}
-
+<link rel="stylesheet" href="../static/css/order.css" type="text/css">
 {% endblock %}
 
 {% block title %}
@@ -9,8 +9,45 @@
 {% endblock %}
 
 {% block content %}
-<p style="margin:20px">
-    HELLo
-</p>
+<h1 align="center">Order</h1>
+
+<div id="product-featured-box">
+    <a href="order-pizza.html"> 
+    <div class="product-box">
+        <img src="../static/img/solar-panels.jpg" alt="Solar panel"></img>
+        <span>Pizza</span>
+    </div>
+    </a>
+    <a href="order-breadsticks.html">
+    <div class="product-box">
+        <img src="../static/img/solar-panels.jpg" alt="Solar panel"></img>
+        <span>Breadsticks</span>
+    </div>
+    </a>
+    <a href="order-salad.html">
+    <div class="product-box">
+        <img src="../static/img/solar-panels.jpg" alt="Solar panel"></img>
+        <span>Salad</span>
+    </div>
+    </a>
+    <a href="order-drinks.html">
+    <div class="product-box">
+        <img src="../static/img/solar-panels.jpg" alt="Solar panel"></img>
+        <span>Drinks</span>
+    </div>
+    </a>
+    <a href="order-dessert.html">
+    <div class="product-box">
+        <img src="../static/img/solar-panels.jpg" alt="Solar panel"></img>
+        <span>Dessert</span>
+    </div>
+    </a>
+    <a href="order-bag.html">
+    <div class="product-box">
+        <img src="../static/img/solar-panels.jpg" alt="Solar panel"></img>
+        <span>Bag</span>
+    </div>
+    </a>
+  </div>
 
 {% endblock %}

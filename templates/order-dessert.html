@@ -1,0 +1,36 @@
+{% extends 'order-base.html' %}
+
+{% block title %}
+Dessert
+{% endblock %}
+
+{% block image %}
+../static/img/dessert.jpg
+{% endblock %}
+
+{% block alt %}
+Dessert
+{% endblock %}
+
+{% block options %}
+<form action="order-bag.html" method="post" style="margin: 20px;">
+    <div class="form-group">
+        <label for="dessert-type">Dessert</label>
+        <select class="form-control" id="dessert-type" name="dessert-type">
+            <option value="cheesecake">Cheesecake ($4.99)</option>
+            <option value="brownie">Brownie ($3.49)</option>
+            <option value="cookie">Cookie ($2.49)</option>
+            <option value="velvet-cake">Red Velvet Cake ($4.99)</option>
+            <option value="chocolate-cake">Chocolate Cake ($4.99)</option>
+            <option value="cannoli">Cannoli ($3.49)</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input type="number" class="form-control" id="quantity" name="quantity" min="1" max="10" value="1">
+    </div>
+{% endblock %}
+
+{% block script %}
+../static/js/order-dessert.js
+{% endblock %}

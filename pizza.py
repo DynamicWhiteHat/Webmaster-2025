@@ -27,5 +27,29 @@ def safety():
 def order():
     return render_template('order.html')
 
+@app.route('/order-pizza.html')
+def order_pizza():
+    return render_template('order-pizza.html')
+
+@app.route('/order-breadsticks.html')
+def order_breadsticks():
+    return render_template('order-breadsticks.html')
+
+@app.route('/order-salad.html')
+def order_salad():
+    return render_template('order-salad.html')
+
+@app.route('/order-drinks.html')
+def order_drinks():
+    return render_template('order-drinks.html')
+
+@app.route('/order-dessert.html')
+def order_dessert():
+    return render_template('order-dessert.html')
+
+@app.route('/order-bag.html')
+def order_bag():
+    return render_template('order-bag.html')
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", debug=True)

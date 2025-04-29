@@ -1,0 +1,41 @@
+{% extends 'order-base.html' %}
+
+{% block title %}
+Salad
+{% endblock %}
+
+{% block image %}
+../static/img/salad.jpg
+{% endblock %}
+
+{% block alt %}
+Salad
+{% endblock %}
+
+{% block options %}
+<form action="order-bag.html" method="post" style="margin: 20px;">
+    <div class="form-group">
+        <label for="size">Size</label>
+        <select class="form-control" id="size" name="size">
+            <option value="small">Small ($5.99)</option>
+            <option value="medium">Medium ($7.49)</option>
+            <option value="large">Large ($9.49)</option>
+        </select>
+        <br>
+        <label for="salad-type">Salad Type</label>
+        <select class="form-control" id="salad-type" name="salad-type">
+            <option value="garden">Garden Salad</option>
+            <option value="caesar">Vegetarian Caesar Salad</option>
+            <option value="greek">Greek Salad</option>
+            <option value="caprese">Caprese Salad</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input type="number" class="form-control" id="quantity" name="quantity" min="1" max="10" value="1">
+    </div>
+{% endblock %}
+
+{% block script %}
+../static/js/order-salad.js
+{% endblock %}
