@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <h5 style="margin: 0;" class="capitalize">${displayName}</h5>
                         <p style="margin: 0;">Price: $${Number(item.price).toFixed(2)}</p>
                     </div>
-                    <button class="btn btn-primary btn-lg bag-remove-button" data-index="${index}">❌</button>
+                    <button class="btn btn-primary btn-lg bag-remove-button" data-index="${index}" style="background-color: #2bed4b; border-color: #2bed4b;">❌</button>
                 </div>
             `;
             bagContainer.appendChild(div);
