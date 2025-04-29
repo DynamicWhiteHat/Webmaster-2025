@@ -1,21 +1,27 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    Home page
+    Name of Restaurant
 {% endblock %}
 
 {% block content %}
-    <h1 class="main" style="margin:20px" align="center">
-        Papa's Pizzaeria
+    <h1 align="center">
+        Name of Restaurant
     </h1>
-    <p style="margin:20px;">
-    text here
-    </p>
-    <br>
-    <h2 style="margin:20px" align="center">
-        title here
+    <h2 class="main" style="margin:20px" align="center">
+        About Us
     </h2>
-    <p style="margin:20px">
-        text here
+    <p style="margin:20px" align="center">
+        We are a small, locally owned restaurant that serves wood oven-fired pizza and other Italian dishes. Dedicated to the environment, we pride ourselves in producing top quality food and following the vegetarian diet. This quality is derived from locally sourced food, ensuring freshness and elegance of our meals. The steps towards quality don't stop there, however, and continue into the kitchen, where our specialized cooks use various techniques and follow safety procautions to ensure all measures are taken to promote the quality and reliability of our food. 
     </p>
+    <center>
+    <img src="../static/img/vegitargian-pizza.jpg" alt="A small pizza featuring tomato sauce, mozzarella, bazil, and tomatoes" style="width:50%; height:auto; margin:20px">
+    </center>
+    <h2 align="center">
+        Buttons to Our Other Pages
+    </h2>
+    <a href="sourcing.html"><button type="submit">Sourcing and Sustainability</button></a>
+    <a href="cooking.html"><button type="submit">Safety and Cooking</button></a>
+    <a href="menu.html"><button type="submit">Menu</button></a>
+    <a href="order.html"><button type="submit">Order Now</button></a>
 {% endblock %}
